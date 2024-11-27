@@ -70,7 +70,7 @@ for num_taps in range(min_num_taps, max_num_taps, num_taps_increment):
         plt.axvline(x=high_cut_off, color='g', linestyle='--', label='Frecuencia de corte')
         plt.axvline(x=-high_cut_off, color='g', linestyle='--', label='Frecuencia de corte')
     plt.xlabel("frecuencia")
-    plt.ylabel("respuesta al impulso")
+    plt.ylabel("respuesta en frecuencia")
 
     plt.tight_layout()
     plt_show_sec(1.1)

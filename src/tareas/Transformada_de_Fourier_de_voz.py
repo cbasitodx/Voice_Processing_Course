@@ -7,7 +7,7 @@ import scipy.io.wavfile as wav
 frecuencia_muestreo : float                                                   # Frecuencia con la que se muestreo la senal (en Hz)
 senal : np.ndarray                                                            # Valores de la senal registrada
 
-frecuencia_muestreo, senal = wav.read('./src/tareas/voz_para_fft.wav')            # Obtencion del audio wav generado
+frecuencia_muestreo, senal = wav.read('./src/tareas/voz_para_fft.wav')        # Obtencion del audio wav generado
 senal = senal.astype('float64')
 
 numero_de_muestras : int = len(senal)                                         # Numero de muestras de la senal y de la fft
@@ -30,8 +30,8 @@ H = np.fft.fftshift(H) # Desplazamos los 0 Hz hasta el centro
 w = np.linspace(-frecuencia_muestreo/2, frecuencia_muestreo/2, len(H)) # Dominio de la frecuencia
 
 # Reproducimos la senal
-sd.play(senal, frecuencia_muestreo)
-sd.wait()
+#sd.play(senal, frecuencia_muestreo)
+#sd.wait()
 
 # Dibujamos la senal obtenida y su espectro
 plt.figure()
