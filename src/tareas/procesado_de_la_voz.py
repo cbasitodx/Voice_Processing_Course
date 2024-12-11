@@ -211,7 +211,7 @@ def calcular_freq_fundamental_por_ventana(senal          : np.ndarray,
 # **************************************************************************** #
 
 # Cargamos la senal a usar y la normalizamos
-frecuencia_muestreo, senal = wav.read('./src/funciones_basicas/sintetico.wav')
+frecuencia_muestreo, senal = wav.read('./src/funciones_basicas/hombre.wav')
 senal = senal.astype('float64') 
 
 senal -= np.mean(senal)
